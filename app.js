@@ -51,21 +51,41 @@ const managerQuestions = [
     type: "input",
     name: "managerName",
     message: "What is your name",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your name"
+  }
   },
   {
     type: "input",
     name: "managerId",
     message: "What is your ID",
+    validate: function(answer){
+      if(!isNaN(answer)){
+          return true
+      }return "please enter a number"
+  }
   },
   {
     type: "input",
     name: "managerOffice",
     message: "What is your office number",
+    validate: function(answer){
+      if(!isNaN(answer)){
+          return true
+      }return "please enter a number"
+  }
   },
   {
     type: "input",
     name: "managerEmail",
     message: "What is your E-mail",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your E-mail"
+  }
   },
 ];
 const engineerQuestions = [
@@ -73,21 +93,41 @@ const engineerQuestions = [
     type: "input",
     name: "engineerName",
     message: "What is your name",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your name"
+  }
   },
   {
     type: "input",
     name: "engineerId",
     message: "What is your ID",
+    validate: function(answer){
+      if(!isNaN(answer)){
+          return true
+      }return "please enter a number"
+  }
   },
   {
     type: "input",
     name: "engineerGithub",
     message: "What is your GitHub",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your GibHub name"
+  }
   },
   {
     type: "input",
     name: "engineerEmail",
     message: "What is your E-mail",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your E-mail"
+  }
   },
 ];
 
@@ -116,11 +156,21 @@ const internQuestions = [
     type: "input",
     name: "internSchool",
     message: "What is your school",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your school"
+  }
   },
   {
     type: "input",
     name: "internEmail",
     message: "What is your E-mail",
+    validate: function(answer) {
+      if(answer !== "") {
+          return true
+      } return "please enter your E-Mail"
+  }
   },
 ];
 
